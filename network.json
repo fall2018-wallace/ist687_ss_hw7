@@ -23,6 +23,16 @@
             ],
             "source": "clean.R",
             "target": "data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "clean_data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "mergeUSA.R"
         }
     ],
     "nodes": [
@@ -42,6 +52,6 @@
             "name": "mergeUSA.R"
         }
     ],
-    "updated_at": "2018-10-14 19:21:02",
+    "updated_at": "2018-10-14 19:21:50",
     "url": "https://github.com/fall2018-wallace/ist687_ss_hw7"
 }
