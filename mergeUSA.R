@@ -23,9 +23,10 @@ merge_df
 name<-state.name
 area<- state.area
 center<-state.center
+name
 area
 center
-merge_df1<-data.frame(merge_df$Statename,name, area, center)
+merge_df1<-data.frame(name, area, center)
 merge_df1
 
 #Step B: Generate a color coded map
