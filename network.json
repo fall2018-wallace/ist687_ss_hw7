@@ -79,8 +79,11 @@
         },
         {
             "name": "mappop.png"
+        },
+        {
+            "name": "mapzoom.png"
         }
     ],
-    "updated_at": "2018-10-15 03:45:26",
+    "updated_at": "2018-10-15 03:47:20",
     "url": "https://github.com/fall2018-wallace/ist687_ss_hw7"
 }
