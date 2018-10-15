@@ -4,17 +4,13 @@ library(ggplot2)
 #Step A: Load and Merge datasets
 #1)	Read in the census dataset and the USArrests and merge them 
 arrests <- USArrests
-
 arrests
-
 df1<-df
 
 arrests$Statename <- rownames(arrests)
-
 arrests
 
 merge_df <- merge(arrests,df,by="Statename")
-
 merge_df
 
 #2)	Add the area of each state, and the center of each state,
