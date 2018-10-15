@@ -25,9 +25,12 @@ area<- state.area
 center<-state.center
 area
 center
-merge_df<-data.frame(merge_df$Statename, area, center)
-merge_df
+merge_df1<-data.frame(merge_df$Statename, area, center)
+merge_df1
 
 #Step B: Generate a color coded map
 #3)	Create a color coded map, based on the area of the state 
+usa <- map_data("merge_df1") # we already did this, but we can do it again
+ggplot() + geom_polygon(data =merge_df1 , aes(x=long, y = lat, group = group)) + 
+  coord_fixed(1.3)
 
