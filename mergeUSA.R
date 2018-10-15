@@ -22,4 +22,4 @@ area<- state.area
 center<-state.center
 area
 center
-merge_df<-c(merge_df, area, center)
+merge_df<-data.frame(merge_df, area, center)
