@@ -54,6 +54,16 @@
             ],
             "source": "mergeUSA.R",
             "target": "mappop.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "mapzoom",
+                    "type": "png"
+                }
+            ],
+            "source": "mergeUSA.R",
+            "target": "mapzoom.png"
         }
     ],
     "nodes": [
@@ -84,6 +94,6 @@
             "name": "mapzoom.png"
         }
     ],
-    "updated_at": "2018-10-15 03:47:20",
+    "updated_at": "2018-10-15 03:47:34",
     "url": "https://github.com/fall2018-wallace/ist687_ss_hw7"
 }
