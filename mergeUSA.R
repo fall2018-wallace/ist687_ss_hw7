@@ -29,7 +29,7 @@ center
 merge_df1<-data.frame(Statename, area, center)
 merge_df1
 
-new_merge_df<-(merge_df,merge_df1,by='Statename')
+new_merge_df<-merge(merge_df,merge_df1,by='Statename')
 new_merge_df
 
 #Step B: Generate a color coded map
