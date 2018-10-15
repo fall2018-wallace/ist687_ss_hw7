@@ -24,6 +24,16 @@
             ],
             "source": "clean.R",
             "target": "mergeUSA.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "mapArea",
+                    "type": "png"
+                }
+            ],
+            "source": "mergeUSA.R",
+            "target": "mapArea.png"
         }
     ],
     "nodes": [
@@ -45,6 +55,6 @@
             "name": "mapArea.png"
         }
     ],
-    "updated_at": "2018-10-15 02:46:09",
+    "updated_at": "2018-10-15 02:46:18",
     "url": "https://github.com/fall2018-wallace/ist687_ss_hw7"
 }
