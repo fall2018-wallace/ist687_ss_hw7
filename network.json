@@ -40,8 +40,11 @@
             "desc": "",
             "name": "mergeUSA.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "mapArea.png"
         }
     ],
-    "updated_at": "2018-10-14 19:32:06",
+    "updated_at": "2018-10-15 02:46:09",
     "url": "https://github.com/fall2018-wallace/ist687_ss_hw7"
 }
