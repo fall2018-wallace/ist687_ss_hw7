@@ -38,5 +38,5 @@ usa <- map_data("state")
 mapArea<-ggplot(new_merge_df, aes(map_id=Statename))
 mapArea<-mapArea+geom_map(map = usa,aes(fill=new_merge_df$area))
 mapArea<-mapArea+expand_limits(x=usa$long,y=usa$lat)
-mapArea+coord_map()
+mapArea<-mapArea+coord_map()
 
