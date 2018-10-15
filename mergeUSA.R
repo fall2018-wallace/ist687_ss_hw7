@@ -26,7 +26,7 @@ center<-state.center
 Statename
 area
 center
-merge_df1<-data.frame(name, area, center)
+merge_df1<-data.frame(Statename, area, center)
 merge_df1
 
 new_merge_df<-(merge_df,mer_df1,by="Statename")
