@@ -1,7 +1,7 @@
 
 library("ggmap")
 library("ggplot2")
-#A) Create a merged dataframe -- with the attributes from both dataset
+#Step A: Load and Merge datasets
 arrests <- USArrests
 
 arrests
@@ -22,4 +22,6 @@ area
 center
 merge_df<-data.frame(merge_df$Statename, area, center)
 merge_df
+
+#Step B: Generate a color coded map
 
