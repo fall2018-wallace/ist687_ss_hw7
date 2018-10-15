@@ -35,8 +35,6 @@ new_merge_df
 #Step B: Generate a color coded map
 #3)	Create a color coded map, based on the area of the state 
 usa <- map_data("state")
-mapArea<-ggplot(new_merge_df, aes(map_id=Statename))
-mapArea<-mapArea+geom_map(map = usa,aes(fill=new_merge_df$area))
-mapArea<-mapArea+expand_limits(x=usa$long,y=usa$lat)
-mapArea<-mapArea+coord_map()
+mapArea<-ggplot(new_merge_df, aes(map_id=Statename))+geom_map(map = usa,aes(fill=new_merge_df$area))+expand_limits(x=usa$long,y=usa$lat)+coord_map()
+
 
