@@ -53,8 +53,11 @@
             "desc": "",
             "name": "mergeUSA.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "mapMurder.png"
         }
     ],
-    "updated_at": "2018-10-15 03:09:48",
+    "updated_at": "2018-10-15 03:44:33",
     "url": "https://github.com/fall2018-wallace/ist687_ss_hw7"
 }
