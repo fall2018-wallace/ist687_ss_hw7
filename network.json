@@ -44,6 +44,16 @@
             ],
             "source": "mergeUSA.R",
             "target": "mapMurder.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "mappop",
+                    "type": "png"
+                }
+            ],
+            "source": "mergeUSA.R",
+            "target": "mappop.png"
         }
     ],
     "nodes": [
@@ -71,6 +81,6 @@
             "name": "mappop.png"
         }
     ],
-    "updated_at": "2018-10-15 03:45:16",
+    "updated_at": "2018-10-15 03:45:26",
     "url": "https://github.com/fall2018-wallace/ist687_ss_hw7"
 }
