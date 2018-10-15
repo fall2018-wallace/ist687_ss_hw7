@@ -41,3 +41,6 @@ mapArea<-ggplot(new_merge_df, aes(map_id=Statename))+geom_map(map = usa,aes(fill
 #4)	Repeat step B, but color code the map based on the murder rate of each state.
 mapMurder<-ggplot(merge_df, aes(map_id=NAME))+geom_map(map = us,aes(fill=merge_df$Murder))+expand_limits(x=us$long,y=us$lat)+coord_map()
 
+#5)	 Show the population as a circle per state (the larger the population, the larger the circle), using the location defined by the center of each state
+mappop<-mapmurder +geom_point(x=merge_df$x,y=merge_df$y,aes(size=merge_df$POPESTIMATE2017))
+
