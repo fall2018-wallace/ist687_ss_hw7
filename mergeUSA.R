@@ -37,13 +37,17 @@ new_merge_df
 usa <- map_data("state")
 mapArea<-ggplot(new_merge_df, aes(map_id=Statename))+geom_map(map = usa,aes(fill=new_merge_df$area))+expand_limits(x=usa$long,y=usa$lat)+coord_map()
 
-
+#C
 #4)	Repeat step B, but color code the map based on the murder rate of each state.
-mapMurder<-ggplot(merge_df, aes(map_id=NAME))+geom_map(map = us,aes(fill=merge_df$Murder))+expand_limits(x=us$long,y=us$lat)+coord_map()
+mapMurder<-ggplot(new_merge_df, aes(map_id=Statename))+geom_map(map = usa,aes(fill=new_merge_df$Murder))+expand_limits(x=usa$long,y=usa$lat)+coord_map()
 
 #5)	 Show the population as a circle per state (the larger the population, the larger the circle), using the location defined by the center of each state
-mappop<-mapmurder +geom_point(x=merge_df$x,y=merge_df$y,aes(size=merge_df$POPESTIMATE2017))
-##6)	Repeat step C, but only show the states in the north east
+mappop<-mapmurder +geom_point(x=new_merge_df$x,y=new_merge_df$y,aes(size=new_merge_df$POPESTIMATE2017))
+
+
+
+#D
+#6)	Repeat step C, but only show the states in the north east
 #Hint: get the lat and lon of new york city
 #Hint: set the xlim and ylim to NYC +/- 10
 
@@ -51,5 +55,6 @@ latlon<-geocode(source = "dsk","nyc,new york,ny")
 #lon -74.00597
 #lat 40.71427
 latlon
-
+mapzoom<-mappop
+mapzoom+geom_point(x=new_merge_df$x,y=new_merge_df$y)+coord_fixed(xlim = c(latlon$lon+10,latlon$lon-10),ylim = c(latlon$lat-10,latlon$lat+10))
 
