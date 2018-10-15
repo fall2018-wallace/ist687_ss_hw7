@@ -42,7 +42,7 @@ mapArea<-ggplot(new_merge_df, aes(map_id=Statename))+geom_map(map = usa,aes(fill
 mapMurder<-ggplot(new_merge_df, aes(map_id=Statename))+geom_map(map = usa,aes(fill=new_merge_df$Murder))+expand_limits(x=usa$long,y=usa$lat)+coord_map()
 
 #5)	 Show the population as a circle per state (the larger the population, the larger the circle), using the location defined by the center of each state
-mappop<-mapmurder +geom_point(x=new_merge_df$x,y=new_merge_df$y,aes(size=new_merge_df$POPESTIMATE2017))
+mappop<-mapMurder +geom_point(x=new_merge_df$x,y=new_merge_df$y,aes(size=new_merge_df$POPESTIMATE2017))
 
 
 
