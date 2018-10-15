@@ -46,15 +46,15 @@
             "task_status": "in progress"
         },
         {
+            "name": "mapArea.png"
+        },
+        {
             "assigned_to": "sshete",
             "desc": "",
             "name": "mergeUSA.R",
             "task_status": "in progress"
-        },
-        {
-            "name": "mapArea.png"
         }
     ],
-    "updated_at": "2018-10-15 02:46:18",
+    "updated_at": "2018-10-15 02:48:06",
     "url": "https://github.com/fall2018-wallace/ist687_ss_hw7"
 }
