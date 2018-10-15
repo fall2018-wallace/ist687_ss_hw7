@@ -1,6 +1,6 @@
 
-library(ggmap)
-library(ggplot2)
+library("ggmap")
+library("ggplot2")
 #Step A: Load and Merge datasets
 #1)	Read in the census dataset and the USArrests and merge them 
 arrests <- USArrests
