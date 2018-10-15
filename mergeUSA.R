@@ -18,5 +18,5 @@ merge_df <- merge(arrests,df,by="Statename")
 
 merge_df
 
-area<- state.area(merge_df$Statename)
-center<-
+area<- state.area
+center<-state.center
