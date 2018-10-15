@@ -20,4 +20,5 @@ merge_df
 
 area<- state.area
 center<-state.center
-areacenter
+area
+center
