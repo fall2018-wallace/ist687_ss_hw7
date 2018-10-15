@@ -43,4 +43,13 @@ mapMurder<-ggplot(merge_df, aes(map_id=NAME))+geom_map(map = us,aes(fill=merge_d
 
 #5)	 Show the population as a circle per state (the larger the population, the larger the circle), using the location defined by the center of each state
 mappop<-mapmurder +geom_point(x=merge_df$x,y=merge_df$y,aes(size=merge_df$POPESTIMATE2017))
+##6)	Repeat step C, but only show the states in the north east
+#Hint: get the lat and lon of new york city
+#Hint: set the xlim and ylim to NYC +/- 10
+
+latlon<-geocode(source = "dsk","nyc,new york,ny")
+#lon -74.00597
+#lat 40.71427
+latlon
+
 
