@@ -55,6 +55,5 @@ latlon<-geocode(source = "dsk","nyc,new york,ny")
 #lon -74.00597
 #lat 40.71427
 latlon
-mapzoom<-mappop
-mapzoom+geom_point(x=new_merge_df$x,y=new_merge_df$y)+coord_fixed(xlim = c(latlon$lon+10,latlon$lon-10),ylim = c(latlon$lat-10,latlon$lat+10))
+mapzoom<-mappop+geom_point(x=new_merge_df$x,y=new_merge_df$y)+coord_fixed(xlim = c(latlon$lon+10,latlon$lon-10),ylim = c(latlon$lat-10,latlon$lat+10))
 
