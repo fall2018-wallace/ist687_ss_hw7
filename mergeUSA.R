@@ -38,3 +38,6 @@ usa <- map_data("state")
 mapArea<-ggplot(new_merge_df, aes(map_id=Statename))+geom_map(map = usa,aes(fill=new_merge_df$area))+expand_limits(x=usa$long,y=usa$lat)+coord_map()
 
 
+#4)	Repeat step B, but color code the map based on the murder rate of each state.
+mapMurder<-ggplot(merge_df, aes(map_id=NAME))+geom_map(map = us,aes(fill=merge_df$Murder))+expand_limits(x=us$long,y=us$lat)+coord_map()
+
