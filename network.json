@@ -1,0 +1,100 @@
+{
+    "collaborators": [
+        "sshete"
+    ],
+    "created_at": "2018-10-14 19:11:20",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "scprc_est_2017_18_pop_res.csv",
+            "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "output": "c",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "mergeUSA.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "mappop",
+                    "type": "png"
+                }
+            ],
+            "source": "mergeUSA.R",
+            "target": "mappop.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "mapzoom",
+                    "type": "png"
+                }
+            ],
+            "source": "mergeUSA.R",
+            "target": "mapzoom.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "mapArea",
+                    "type": "png"
+                }
+            ],
+            "source": "mergeUSA.R",
+            "target": "mapArea.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "mapMurder",
+                    "type": "png"
+                }
+            ],
+            "source": "mergeUSA.R",
+            "target": "mapMurder.png"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "scprc_est_2017_18_pop_res.csv"
+        },
+        {
+            "name": "mapArea.png"
+        },
+        {
+            "name": "mapMurder.png"
+        },
+        {
+            "name": "mappop.png"
+        },
+        {
+            "name": "mapzoom.png"
+        },
+        {
+            "assigned_to": "sshete",
+            "desc": "",
+            "name": "clean.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "sshete",
+            "desc": "",
+            "name": "mergeUSA.R",
+            "task_status": "in progress"
+        }
+    ],
+    "updated_at": "2018-10-15 03:54:38",
+    "url": "https://github.com/fall2018-wallace/ist687_ss_hw7"
+}
